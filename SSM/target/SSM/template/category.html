@@ -1,0 +1,12 @@
+<div  class="container2">
+
+			<div ng-repeat="theme in themes"  repeat-finish="loadCategorySuccess"  id="item{{$index+1}}" class="sHoverItem" style="position: relative; overflow: hidden;">
+				<img id="img{{$index+1}}" src="{{theme.thumbnail}}">
+
+				<span id="intro{{$index+1}}" class="sIntro" style="position: absolute; width: 260px; height: 180px; top: 0px; left: -260px; z-index: 99; opacity: 0;">
+					<h2>{{theme.name}}</h2>
+					<p>{{theme.description}}</p>
+					<a ui-sref="categorys({id:{{theme.id}}})">点击查看</a>
+				</span>
+			</div>
+
