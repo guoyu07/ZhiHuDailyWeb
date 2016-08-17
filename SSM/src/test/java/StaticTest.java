@@ -15,6 +15,7 @@ public class StaticTest {
         String b = "a";
         Append(b);
         System.out.println(b);
+        System.out.println("hello world");
     }
 
 }
